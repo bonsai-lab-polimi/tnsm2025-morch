@@ -13,11 +13,11 @@ SEED = 42
 MONITOR_PATH = f"./results_3obj/ppo_deepset_{SEED}"
 
 # %%
-reward_weights = equally_spaced_weights(2, 100, seed=SEED)
+reward_weights = equally_spaced_weights(3, 100, seed=SEED)
 
 # %%
 for i, weights in tqdm(enumerate(reward_weights)):
-    monitor_path = MONITOR_PATH + f"{weights[0]}_{weights[1]}.monitor.csv"
+    monitor_path = MONITOR_PATH + f"{weights[0]}_{weights[1]}_{weights[2]}.monitor.csv"
     model_path = f"./results_3obj/ppo_deepset_{SEED}_{weights[0]}_{weights[1]}_{weights[2]}.zip"
     if os.path.exists(model_path):
         print(f"Model with weights {weights} already trained, skipping")
