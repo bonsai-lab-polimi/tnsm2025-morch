@@ -13,7 +13,7 @@ MONITOR_PATH = f"./results_2obj/ppo_deepset_{SEED}"
 
 # %%
 reward_weights = []
-for i in np.arange(0.1, 1.1, 0.1):
+for i in np.arange(0.01, 1.01, 0.01):
     reward_weights.append((i, 1 - i))
 
 # %%
