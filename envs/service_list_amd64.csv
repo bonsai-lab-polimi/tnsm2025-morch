@@ -1,0 +1,29 @@
+Name,Service Type,URL,Disk,CPU_rest,CPUxUser,Base,Download time,Note,Additional Notes
+Python,PaaS,https://hub.docker.com/_/python,1.01,0.0,15.222222222222218,Bare,39.125,Could be used on top of IaaS and can run SaaS and FaaS,https://github.com/vprelovac/python-speed/blob/main/bench.py
+Vlc,PaaS,https://hub.docker.com/r/kasmweb/vlc,2.43,1.5275510204081635,62.026136363636354,Bare,99.685,Could be used on top of IaaS and can run SaaS and FaaS,created a server from man on docker.io / within a container only one session
+Ffmpeg,PaaS,https://hub.docker.com/r/linuxserver/ffmpeg,0.401,0.0,0.75,Bare,16.210,Could be used on top of IaaS and can run SaaS and FaaS,111.815s with no cpu limit / 787.301s with 50% cpu / 140.230s with 75% cpu
+Gcc,PaaS,https://hub.docker.com/r/bellsoft/alpaquita-linux-gcc,0.394,0.16559139784946234,11.684999999999999,Bare,16.443,Could be used on top of IaaS and can run SaaS and FaaS,assessed using eigen
+Gimp,SaaS,https://hub.docker.com/r/kasmweb/gimp,2.44,1.59375,10.424999999999999,Bare,97.380,GUI on a web page locally,
+Redis,SaaS,https://hub.docker.com/_/redis,0.130,0.21414141414141413,0.0,Bare,7.658,Open source key-value store that functions as a data structure server,disk intensive
+Odoo,SaaS,https://hub.docker.com/_/odoo,1.68,0.1806122448979592,1.8936507936507936,Bare,63.516s,GUI on a web page locally,high variance - assessed using deno
+Rust,PaaS,https://hub.docker.com/_/rust,1.42,0.0,58.212500000000006,Bare,59.475,Could be used on top of IaaS and can run SaaS and FaaS,tokio
+Matlab,PaaS,https://hub.docker.com/r/mathworks/matlab,5.6,0.16875000000000004,12.345238095238095,Bare,220.221s,Could be used on top of IaaS and can run SaaS and FaaS,after login 0.6610526315789474% evaluated through https://www.mathworks.com/help/matlab/matlab_prog/test-performance-with-scripts.html
+Discord,SaaS,https://hub.docker.com/r/kasmweb/discord,2.57,2.6431578947368415,18.36021505376344,Bare,98.371s,GUI on a web page locally,
+ImageConverter,PaaS,https://hub.docker.com/r/giditre/gaucho-transcode,0.936,0.16559139784946234,0.05,Bare,38.147,Could be used on top of IaaS and can run SaaS and FaaS,
+ImageConverter-1,FaaS,,0.0,0.0,0.05,ImageConverter,,Built on top of VLC or Ffmpeg or natively run,jpg -> png
+VideoTranscoder-1,FaaS,,0.435,0.0,14.461702127659573,Ffmpeg,,Built on top of VLC or Ffmpeg or natively run,109.992s
+VideoTranscoder-2,FaaS,,0.435,0.0,18.428260869565218,Ffmpeg,,Built on top of VLC or Ffmpeg or natively run,avi -> mkv
+VideoTranscoder-3,FaaS,,0.435,0.0,15.41891891891892,Ffmpeg,,Built on top of VLC or Ffmpeg or natively run,avi -> mp4
+ImageConverter-2,FaaS,,0.0,0.0,0.0,ImageConverter,,Built on top of VLC or Ffmpeg or natively run,png -> jpg
+ImageConverter-3,FaaS,,0.0,0.0,0.0,ImageConverter,,Built on top of VLC or Ffmpeg or natively run,jpg -> pdf
+Integrity-1,FaaS,,0.0,0.0,12.546000000000001,Python,,"To be run on top of Python, natively or virtualized",sha256
+Integrity-2,FaaS,,0.0,0.0,12.556,Python,,"To be run on top of Python, natively or virtualized",sha512
+Integrity-3,FaaS,,0.0,0.0,12.545999999999998,Python,,"To be run on top of Python, natively or virtualized",blake2
+OS 22.04.2 server,,,7.54,0.13048780487804879,0.0,Bare,,,
+Julia,PaaS,https://hub.docker.com/_/julia,0.710,0.2154639175257732,50.218085106382986,Bare,24.282,Could be used on top of IaaS and can run SaaS and FaaS,Matrices mult
+TensorflowServing,PaaS,https://hub.docker.com/r/bitnami/tensorflow-serving,0.932,0.23900000000000002,0.0,Bare,32.071,Could be used on top of IaaS and can run SaaS and FaaS,resnet50
+Ts-random_forest,FaaS,,0.670,0.0,30.025,Python,,To be run on top of Python natively or virtualized on 25,1.046s peak 30.025%
+Ts-xgboost,FaaS,,0.670,0.0,23.75,Python,,To be run on top of Python natively or virtualized on 25,2.771s peak 23.75%
+Ts-resnet50,FaaS,,0.670,0.0,23.62,Python,,To be run on top of Python natively or virtualized on 25,4.34s peak 23.62%
+Alpine,IaaS,https://hub.docker.com/_/alpine,0.0733,0.17422680412371136,0.0,Bare,2.918,"Can run PaaS, SaaS, and FaaS.",
+Ubuntu,IaaS,https://hub.docker.com/_/ubuntu,0.0778,0.17157894736842103,0.0,Bare,5.412,"Can run PaaS, SaaS, and FaaS.",

@@ -1,0 +1,15 @@
+Name,Service Type,Link,Disk,CPU_rest,CPUxUser,Base,Download time,Note,Additional Notes
+OS,,,1.850,1.196,0.0,Bare,,,
+Docker,,,0.831,0.0,0.0,Bare,,"Can run IaaS, PaaS, SaaS, and FaaS. Version 20.10.24",
+Python,PaaS,https://hub.docker.com/_/python,1.022,0.0,30.325,Bare,188,Could be used on top of IaaS and can run SaaS and FaaS,https://github.com/vprelovac/python-speed/blob/main/bench.py
+Vlc,PaaS,https://hub.docker.com/r/kasmweb/vlc,2.466,3.417,82.335,Bare,566,Could be used on top of IaaS and can run SaaS and FaaS,created a server from man on docker.io / within a container only one session
+Ffmpeg,PaaS,https://hub.docker.com/r/linuxserver/ffmpeg,0.320,0.0,99.9,Bare,54,Could be used on top of IaaS and can run SaaS and FaaS,
+Gimp,SaaS,https://hub.docker.com/r/kasmweb/gimp,2440,3.512,30.869,Bare,571,GUI on a web page locally,
+Alpine,IaaS,https://hub.docker.com/_/alpine,0.0883,1.174,0.0,Bare,4,"Can run PaaS, SaaS, and FaaS.",
+Ubuntu,IaaS,https://hub.docker.com/_/ubuntu,0.101,1.077,0.0,Bare,18,"Can run PaaS, SaaS, and FaaS.",
+Video TranscoderNA,FaaS,,0.0,0.0,99.9,Ffmpeg,-,Built on top of VLC or Ffmpeg or natively run,
+Video Transcoder-2,FaaS,,0.0,0.0,99.9,Ffmpeg,-,Built on top of VLC or Ffmpeg or natively run,avi -> mkv
+Video Transcoder-3,FaaS,,0.0,0.0,99.9,Ffmpeg,-,Built on top of VLC or Ffmpeg or natively run,avi -> mp4
+Integrity 1,FaaS,,0.0,0.0,79.305,Python,-,"To be run on top of Python, natively or virtualized",sha256
+Integrity 2,FaaS,,0.0,0.0,26.942,Python,-,"To be run on top of Python, natively or virtualized",sha512
+Integrity 3,FaaS,,0.0,0.0,24.79,Python,-,"To be run on top of Python, natively or virtualized",blake2
