@@ -48,7 +48,7 @@ n_episodes = 100
 
 # %%
 # eval
-agent_files = [f for f in os.listdir("./results") if f.endswith(".zip")]
+agent_files = [f for f in os.listdir("./results_3obj") if f.endswith(".zip")]
 
 # %%
 vec_rewards = []
